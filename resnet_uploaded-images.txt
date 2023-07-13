@@ -1,0 +1,107 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+All key-value pairs in dictionary results_dic are below:
+
+Filename= Dog_01.jpg    Pet Label= dog
+Filename= Dog_02.jpg    Pet Label= dog
+Filename= humming_bird_01.jpg    Pet Label= humming bird
+Filename= porsche_911_01.jpg    Pet Label= porsche
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:            humming_bird_01.jpg  label:               humming bird
+ 4 key:             porsche_911_01.jpg  label:                    porsche
+
+File Name= Dog_01.jpg 
+Pet Image Label= dog 
+Classifier Label= american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier 
+Match= 0
+
+File Name= Dog_02.jpg 
+Pet Image Label= dog 
+Classifier Label= mask 
+Match= 0
+
+File Name= humming_bird_01.jpg 
+Pet Image Label= humming bird 
+Classifier Label= jacamar 
+Match= 0
+
+File Name= porsche_911_01.jpg 
+Pet Image Label= porsche 
+Classifier Label= sports car, sport car 
+Match= 0
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                           mask
+
+           humming_bird_01.jpg: 
+Real:               humming bird   Classifier:                        jacamar
+
+            porsche_911_01.jpg: 
+Real:                    porsche   Classifier:          sports car, sport car
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                           mask  
+PetLabelDog: 1  ClassLabelDog: 0
+
+           humming_bird_01.jpg: 
+Real:               humming bird   Classifier:                        jacamar  
+PetLabelDog: 0  ClassLabelDog: 0
+
+            porsche_911_01.jpg: 
+Real:                    porsche   Classifier:          sports car, sport car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images: 4
+N Dog Images: 2
+N Not-Dog Images: 2
+
+Summary statistics on Model Run:
+pct_match: 0.0
+pct_correct_dogs: 50.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 100.0
+
+INCORRECT Dog/NOT Dog Assignments:
+
+Pet label: dog, Classifier label: mask
+
+INCORRECT Dog Breed Assignment:
+Real: dog,   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+
+** Total Elapsed Runtime: 0:0:1
